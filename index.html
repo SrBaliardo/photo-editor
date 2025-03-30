@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <title>SIMPLEASY Photo Editor</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <button id="btnResetFilters">Limpar Filtros</button>
+        </div>
+
+        <div>
+          <button id="btnSubmit">Baixar Imagem</button>
+          <button id="btnNewImage">Nova Imagem</button>
+        </div>
+      </header>
+
+      <div class="container-image">
+        <input type="file" accept="image/*" class="input-file" />
+        <img src="./images/default-img.gif" alt="default-image" />
+      </div>
+
+      <footer>
+        <div class="container-rotate">
+          <button onclick="handleDirection('rotateRight')">
+            <img src="./images/rotate-right.png" alt="rotate-right" />
+          </button>
+          <button onclick="handleDirection('rotateLeft')">
+            <img src="./images/rotate-left.png" alt="rotate-right" />
+          </button>
+          <button onclick="handleDirection('reflectY')">
+            <img src="./images/reflect-vertical.png" alt="rotate-right" />
+          </button>
+          <button onclick="handleDirection('reflectX')">
+            <img src="./images/reflect-horizontal.png" alt="rotate-right" />
+          </button>
+        </div>
+
+        <span id="rangeValue"></span>
+        <input type="range" style="width: 80%" />
+
+        <div class="container-filters">
+          <button id="filterDefault" class="active">Brilho</button>
+          <button>Contraste</button>
+          <button>Saturação</button>
+          <button>Cinza</button>
+          <button>Inversão</button>
+        </div>
+
+        <p class="title-resize">Redimensionar</p>
+        <div class="container-resize">
+          <div class="original-data">
+            <div class="div">
+              <label>Largura (px):</label>
+              <input type="number" id="originalWidthValue" disabled />
+            </div>
+
+            <div class="div">
+              <label>Altura (px):</label>
+              <input type="number" id="originalHeightValue" disabled />
+            </div>
+          </div>
+
+          <img src="./images/right-arrow.png" alt="arrow-image" />
+
+          <div class="resized-data">
+            <div class="div">
+              <label>Largura (px):</label>
+              <input type="number" id="toResizeWidth" />
+            </div>
+
+            <div class="div">
+              <label>Altura (px):</label>
+              <input type="number" id="toResizeHeight" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <img src="./images/JHAB-Dev_logo.png" alt="jhab-dev-logo" class="logo" />
+
+    <script src="./script.js"></script>
+  </body>
+</html>

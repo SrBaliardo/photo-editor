@@ -1,0 +1,15 @@
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-size: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  font-family: "Poppins";
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+}

@@ -1,0 +1,176 @@
+body {
+  background-color: #cfd2ff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.logo {
+  width: 50px;
+  position: fixed;
+  bottom: 10px;
+}
+
+main {
+  width: 500px;
+  height: 640px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px;
+  margin-top: 50px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  padding: 7px 10px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+#btnSubmit {
+  background-color: #0081cf;
+  color: #ffffff;
+}
+
+.input-file {
+  display: none;
+}
+
+.container-image {
+  max-height: 300px;
+  width: 100%;
+  height: 100%;
+  margin: 10px 0;
+  background-color: #efefef;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-rotate button {
+  width: 45px;
+  height: 45px;
+}
+
+.container-rotate button:active {
+  background-color: #efefef;
+}
+
+.container-filters .active {
+  background-color: #0081cf;
+  color: #ffffff;
+}
+
+.container-filters {
+  margin-top: 15px;
+}
+
+input[type="range"] {
+  appearance: none;
+  width: 100%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 12.8px;
+  background-color: #cfd2ff;
+  border-radius: 25px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background-color: #0081cf;
+  cursor: pointer;
+  appearance: none;
+  margin-top: -3.6px;
+}
+
+.title-resize {
+  margin-top: 15px;
+}
+
+.container-resize {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.container-resize input {
+  width: 80px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.container-resize span {
+  width: 100px;
+  padding: 5px 5px 5px 0;
+  color: #cccccc;
+}
+
+.original-data {
+  display: flex;
+  gap: 10px;
+}
+
+.original-data input {
+  background-color: #efefef;
+}
+
+.resized-data {
+  display: flex;
+  gap: 10px;
+}
+
+.resized-data input {
+  background-color: #0081cf;
+  color: #ffffff;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 430px) {
+  .container-filters button,
+  header button {
+    font-size: 10px;
+  }
+
+  .container-resize {
+    font-size: 10px;
+  }
+
+  .container-resize input {
+    font-size: 10px;
+    width: 55px;
+  }
+}
