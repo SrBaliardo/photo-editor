@@ -1,6 +1,6 @@
 body {
   background-color: #cfd2ff;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,6 @@ main {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 1px 2px;
-  margin-top: 10px;
 }
 
 header {
